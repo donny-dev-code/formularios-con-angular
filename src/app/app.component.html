@@ -44,6 +44,13 @@
    </div>
         </div>
 
+         <div class="form-group">
+   <label for="comentarios">Comentarios</label>
+   <div class="textarea-btn-holder form-group form-group-replace">
+    <textarea name="comentarios" class="form-control" text-comment [(ngModel)]="comentarios" (ngModelChange)="mostrarVar()"></textarea>
+   </div>
+        </div>
+
 
         <div class="form-group">
   <label for=""><input type="checkbox" class="mx-1"  [(ngModel)]="activar"
