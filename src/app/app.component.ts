@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = '062_formValores';
+  title = '062 formValores';
+  codigo:string="";
+  nombre:string="";
+  edad:number=20;
+  opcion:string ="2";
+  comentarios:string="";
+  sexo:string="hombre";
+  activar:boolean=false;
+
+  cambio(){
+    this.activar= !this.activar
+    console.log(this.activar)
+  }
+
+  mostrarVar(){
+   
+    console.log("Codigo (" + this.codigo +")"+ "Nombre ("+ this.nombre +")"+
+    "Edad ("+this.edad+")"+"Opción ("+ this.opcion +")"+
+    "Comentarios ("+this.comentarios +")"+ "Sexo ("+this.sexo+")");
+  }
+ 
+  onSubmit(){
+    console.log("Submit");
+  }
 }
