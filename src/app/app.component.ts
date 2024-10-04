@@ -14,6 +14,7 @@ export class AppComponent {
   comentarios:string="";
   sexo:string="hombre";
   activar:boolean=false;
+  para:string="commit"
 
   cambio(){
     this.activar= !this.activar
